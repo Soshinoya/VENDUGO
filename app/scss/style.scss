@@ -4,4 +4,78 @@
 @import "libs";
 @import "global";
 
-@import "media";
+.header {
+    padding: 40px 0;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+    }
+    &__list-link {
+        @extend %link--white;
+    }
+}
+
+.footer {
+    background-color: #000;
+}
+
+.footer-top {
+    display: flex;
+    padding: 80px 115px 0 80px;
+    margin-bottom: 170px;
+    justify-content: space-between;
+    &__social-info {
+        margin-top: 80px;
+    }
+    &__social-title {
+        margin-bottom: 30px;
+    }
+    &__social-list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__links {
+        display: flex;
+    }
+    &__links-link {
+        @extend %link--white;
+    }
+    &__links-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.footer-bottom {
+    border: 1px solid #fff;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px 80px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+    &__reserve {
+        @extend %link--white;
+        font-size: 18px;
+    }
+    &__link {
+        @extend %link--white;
+        font-size: 18px;
+    }
+}

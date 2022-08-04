@@ -1,6 +1,23 @@
-// $accent-color: #2B6373;
+$accent-color: #ff8a00;
+$accent-color-bg: #56330a;
+$black-color: #0e0e0e;
 
-// %dmsans-700 {
-//   font-family: 'DMSans-Bold', sans-serif;
-//   font-weight: 700;
-// }
+%mont-700 {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: 700;
+}
+
+%mont-500 {
+    font-family: "Montserrat-Medium", sans-serif;
+    font-weight: 500;
+}
+
+%link--white {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    transition: 0.5s;
+    &:hover {
+        color: $accent-color;
+    }
+}
