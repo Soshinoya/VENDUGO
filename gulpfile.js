@@ -78,6 +78,8 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/gsap/dist/gsap.min.js',
+    'app/js/cursor.js',
     'app/js/main.js',
   ])
   .pipe(concat('main.min.js'))

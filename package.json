@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "gsap": "^3.10.4",
     "gulp-htmlmin": "^5.0.1",
     "jquery-form-styler": "^2.0.2",
     "mixitup": "^3.3.1",
