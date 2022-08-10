@@ -1,3 +1,7 @@
+* {
+    cursor: none;
+}
+
 html,
 body {
     height: 100%;
@@ -50,14 +54,6 @@ h4 {
     // margin-bottom: 40px;
 }
 
-a {
-    cursor: pointer;
-}
-
-* {
-    cursor: none;
-}
-
 #cursor,
 #aura {
     position: absolute;
@@ -94,4 +90,17 @@ a {
 #aura.hidden,
 #cursor.hidden {
     transform: scale(0.001);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: $black-color;
+}
+::-webkit-scrollbar-thumb {
+    background: $accent-color;
+    border-radius: 10px;
+    border: 5px solid $black-color;
+    transition: all 0.5s $transition;
 }

@@ -6,6 +6,7 @@
 
 .header {
     padding: 40px 0;
+    // position: relative;
     &__inner {
         display: flex;
         align-items: center;
@@ -77,5 +78,81 @@
     &__link {
         @extend %link--white;
         font-size: 18px;
+    }
+}
+
+.main-slider {
+    position: relative;
+    &__inner {
+        display: flex;
+    }
+    &__item {
+        padding: 0 0 140px 0;
+        min-width: 100%;
+        z-index: -1;
+        display: none;
+    }
+    &__item--active {
+        display: block;
+    }
+    &__item-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: -260px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: -2;
+    }
+    &__item-info {
+        margin: 240px 0 110px;
+    }
+    &__title {
+        max-width: 700px;
+        margin-bottom: 40px;
+    }
+    &__text {
+        max-width: 630px;
+        font-size: 16px;
+        margin-bottom: 80px;
+    }
+    &__button {
+        @extend %button--yellow;
+    }
+    &__item-name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__line {
+        width: 560px;
+        height: 3px;
+        background-color: $accent-color;
+        margin-bottom: 40px;
+    }
+    &__item-name__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__dots-inner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: absolute;
+        gap: 40px;
+        top: 320px;
+        right: 80px;
+    }
+    &__dot {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transition: all 2s $transition;
+    }
+    &__dot--active {
+        background-color: $accent-color;
+        border: 1px solid $accent-color;
     }
 }
