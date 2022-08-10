@@ -2,6 +2,8 @@ $accent-color: #ff8a00;
 $accent-color-bg: #56330a;
 $black-color: #0e0e0e;
 
+$transition: cubic-bezier(0.215, 0.61, 0.355, 1);
+
 %mont-700 {
     font-family: "Montserrat-Bold", sans-serif;
     font-weight: 700;
@@ -20,4 +22,14 @@ $black-color: #0e0e0e;
     &:hover {
         color: $accent-color;
     }
+}
+
+%button--yellow {
+    background-color: $accent-color;
+    color: #fff;
+    @extend %mont-700;
+    line-height: 200%;
+    padding: 17px 40px;
+    border: none;
+    border-radius: 8px;
 }

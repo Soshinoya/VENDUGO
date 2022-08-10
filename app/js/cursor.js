@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.to({}, .01, {
         repeat: -1,
         onRepeat: () => {
-            posX += (mouseX - posX) / 5;
-            posY += (mouseY - posY) / 5;
+            posX += (mouseX - posX) / 3;
+            posY += (mouseY - posY) / 3;
 
             gsap.set(cursor, {
                 css: {

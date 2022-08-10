@@ -80,6 +80,7 @@ function scripts() {
     'node_modules/jquery/dist/jquery.js',
     'node_modules/gsap/dist/gsap.min.js',
     'app/js/cursor.js',
+    'app/js/slider.js',
     'app/js/main.js',
   ])
   .pipe(concat('main.min.js'))
