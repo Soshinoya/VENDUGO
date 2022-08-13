@@ -34,6 +34,7 @@ body {
     line-height: 44px;
     color: $accent-color;
     margin-bottom: 40px;
+    max-width: 650px;
 }
 
 h1 {
@@ -103,4 +104,15 @@ h4 {
     border-radius: 10px;
     border: 5px solid $black-color;
     transition: all 0.5s $transition;
+}
+
+.background__text {
+    position: absolute;
+    width: max-content;
+    transform: rotate(90deg);
+    font-size: 288px;
+    line-height: 200%;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $accent-color-bg;
 }
