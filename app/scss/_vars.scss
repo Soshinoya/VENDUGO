@@ -1,5 +1,5 @@
 $accent-color: #ff8a00;
-$accent-color-bg: #56330a;
+$accent-color-bg: rgba(255, 138, 0, 0.3);
 $black-color: #0e0e0e;
 
 $transition: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -22,6 +22,12 @@ $transition: cubic-bezier(0.215, 0.61, 0.355, 1);
     &:hover {
         color: $accent-color;
     }
+}
+
+%link--yellow {
+    text-decoration-line: underline;
+    color: $accent-color;
+    z-index: 1;
 }
 
 %button--yellow {

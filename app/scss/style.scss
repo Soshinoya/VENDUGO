@@ -149,10 +149,70 @@
         height: 20px;
         border: 1px solid #fff;
         border-radius: 50%;
-        transition: all 2s $transition;
     }
     &__dot--active {
         background-color: $accent-color;
         border: 1px solid $accent-color;
+    }
+}
+
+.about {
+    position: relative;
+    background-color: $black-color;
+    padding: 180px 0;
+    overflow: hidden;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 180px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item-img {
+        height: 760px;
+        z-index: 2;
+        img {
+            position: absolute;
+            left: 0;
+        }
+    }
+    &__item-text {
+        max-width: 650px;
+        margin: 40px 0 20px;
+    }
+    &__item-link {
+        @extend %link--yellow;
+    }
+    &__item-btn {
+        @extend %button--yellow;
+        margin-top: 120px;
+    }
+    &__slider {
+        display: flex;
+        gap: 20px;
+        z-index: 1;
+        margin-left: -30px;
+        transition: all 1s $transition;
+    }
+    &__slider-item {
+        max-height: 480px;
+    }
+    &__blockquote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background-color: #000;
+        padding: 70px 0;
+        margin: 180px 0 0;
+        z-index: 1;
+        blockquote {
+            max-width: 870px;
+            text-align: center;
+        }
     }
 }
