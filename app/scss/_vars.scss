@@ -28,6 +28,7 @@ $transition: cubic-bezier(0.215, 0.61, 0.355, 1);
     text-decoration-line: underline;
     color: $accent-color;
     z-index: 1;
+    font-size: 14px;
 }
 
 %button--yellow {
@@ -39,3 +40,26 @@ $transition: cubic-bezier(0.215, 0.61, 0.355, 1);
     border: none;
     border-radius: 8px;
 }
+
+%button--transparent {
+    background-color: transparent;
+    color: $accent-color;
+    @extend %mont-700;
+    line-height: 200%;
+    padding: 17px 40px;
+    border: 1px solid $accent-color;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  %link--white {
+    font-size: 14px;
+  }
+};
+
+@media (max-width: 720px) {
+  %button--transparent,
+  %button--yellow {
+    padding: 12px 30px;
+  }
+};

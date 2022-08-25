@@ -14,8 +14,6 @@
     <div id="cursor"></div>
     <div id="aura"></div>
 
-
-    <!-- {# {% include 'app/module/_header/_header.html' %} #} -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -41,6 +39,14 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header-menu">
+                    <button class="header-menu__btn">
+                        <span class="header-menu__btn--span"></span> 
+                        <span class="header-menu__btn--span"></span> 
+                        <span class="header-menu__btn--span"></span> 
+                        <span class="header-menu__btn--span"></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -49,8 +55,7 @@
         <section class="main-slider">
             <div class="main-slider__inner">
                 <div class="main-slider__item">
-                    <div class="main-slider__item-img"
-                        style="background-image: url('../images/slider/main-slider/1.jpg');"></div>
+                    <img class="main-slider__item-img" src="images/slider/main-slider/1.jpg"></img>
                     <div class="container">
                         <div class="main-slider__item-inner">
                             <div class="main-slider__item-info">
@@ -72,8 +77,7 @@
                     </div>
                 </div>
                 <div class="main-slider__item">
-                    <div class="main-slider__item-img"
-                        style="background-image: url('../images/slider/main-slider/2.jpg');"></div>
+                    <img class="main-slider__item-img" src="images/slider/main-slider/2.jpg"></img>
                     <div class="container">
                         <div class="main-slider__item-inner">
                             <div class="main-slider__item-info">
@@ -95,8 +99,7 @@
                     </div>
                 </div>
                 <div class="main-slider__item">
-                    <div class="main-slider__item-img"
-                        style="background-image: url('../images/slider/main-slider/3.jpg');"></div>
+                    <img class="main-slider__item-img" src="images/slider/main-slider/3.jpg"></img>
                     <div class="container">
                         <div class="main-slider__item-inner">
                             <div class="main-slider__item-info">
@@ -118,8 +121,7 @@
                     </div>
                 </div>
                 <div class="main-slider__item">
-                    <div class="main-slider__item-img"
-                        style="background-image: url('../images/slider/main-slider/4.jpg');"></div>
+                    <img class="main-slider__item-img" src="images/slider/main-slider/4.jpg"></img>
                     <div class="container">
                         <div class="main-slider__item-inner">
                             <div class="main-slider__item-info">
@@ -141,6 +143,7 @@
                     </div>
                 </div>
                 <ul class="main-slider__dots-inner"></ul>
+                <div class="main-slider__btn-inner"></div>
             </div>
         </section>
 
@@ -155,13 +158,11 @@
                             We provide cars for any obstacle you want to face, from arid deserts to icy mountains. We
                             are ready to prepare the best for you
                         </p>
-                        <img loading="lazy" src="images/bg/font.png" alt="bg text" style="position: absolute; 
-                        top: 200px; right: 80px; z-index: 0;">
+                        <img class="about__item-bg-font" loading="lazy" src="images/bg/font.png" alt="bg text" style="position: absolute; 
+                        top: 0; right: 80px; z-index: 0;">
                     </div>
                     <div class="about__item">
-                        <div class="about__item-img">
-                            <img loading="lazy" src="images/content/1.jpg" alt="Toyota image">
-                        </div>
+                        <img class="about__item-img" loading="lazy" src="images/content/car/1.jpg" alt="Toyota image">
                         <div class="about__item-info">
                             <h2 class="title">
                                 With the right vehicle you can explore and achieve your freedom where you want
@@ -184,18 +185,14 @@
                                 beautiful roads of Turkey.
                             </p>
                             <a class="about__item-link" href="#">CONTACT US</a>
-                            <img loading="lazy" src="images/bg/font.png" alt="bg text" style="position: absolute; 
-                            top: 550px; left: 250px; z-index: 0;">
+                            <img class="about__item-bg-font" loading="lazy" src="images/bg/font.png" alt="bg text"
+                                style="position: absolute; 
+                            top: 450px; left: 250px; z-index: 0;">
                         </div>
-                        <div class="about__item-img">
-                            <img loading="lazy" src="images/content/2.jpg" alt="Toyota image"
-                                style="right: 0; left: auto;">
-                        </div>
+                        <img class="about__item-img" loading="lazy" src="images/content/car/2.jpg" alt="Toyota image">
                     </div>
                     <div class="about__item">
-                        <div class="about__item-img">
-                            <img loading="lazy" src="images/content/3.jpg" alt="Toyota image">
-                        </div>
+                        <img class="about__item-img" loading="lazy" src="images/content/car/3.jpg" alt="Toyota image">
                         <div class="about__item-info">
                             <h2 class="title">
                                 Combine strength and courage on the terrain you will face
@@ -223,6 +220,37 @@
                     The world is vast, so what are you waiting for, let's explore and discover various kinds
                     of wonders on this planet
                 </blockquote>
+            </div>
+            <ul class="about__dot-slider">
+                <img class="about__dot-slider__item" src="images/slider/main-slider/2.jpg" loading="lazy"></img>
+                <img class="about__dot-slider__item" src="images/slider/main-slider/1.jpg" loading="lazy"></img>
+                <img class="about__dot-slider__item" src="images/slider/main-slider/3.jpg" loading="lazy"></img>
+                <img class="about__dot-slider__item" src="images/slider/main-slider/4.jpg" loading="lazy"></img>
+                <div class="about__dot-slider__inner"></div>
+                <div class="about__dot-slider__btn-inner"></div>
+            </ul>
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__item-special">
+                        <h2 class="title">
+                            live the way you dream, explore as much as you want
+                        </h2>
+                        <p class="about__item-text__special">
+                            With vehicle recommendations and also a choice of tourist destinations, you only have to
+                            prepare
+                            mentally and yourself because you have the convenience to live your dream now
+                        </p>
+                        <img class="about__item-bg-font" loading="lazy" src="images/bg/font.png" alt="bg text" style="position: absolute; 
+                            top: -80px; z-index: 0;">
+                    </div>
+                    <div class="about__gallery">
+                        <div class="about__gallery-inner">
+                            <img class="about__gallery-img" src="images/content/car/4.jpg" alt="car image">
+                            <img class="about__gallery-img" src="images/content/nature/1.jpg" alt="nature image">
+                        </div>
+                        <a class="about__gallery-btn" href="#">EXPLORE MORE</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -262,82 +290,84 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer-top__links">
-                    <ul class="footer-top__links-list">
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                SERVICES
-                            </a>
-                        </li>
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                STRATEGY
-                            </a>
-                        </li>
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                CAREER
-                            </a>
-                        </li>
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                INVESTOR
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-top__links">
-                    <ul class="footer-top__links-list">
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                About
-                            </a>
-                        </li>
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                Our Product
-                            </a>
-                        </li>
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                OUR SERVICE
-                            </a>
-                        </li>
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                CONTACT
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-top__links">
-                    <ul class="footer-top__links-list">
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                DEALER LOCATIONS
-                            </a>
-                        </li>
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                NEWS
-                            </a>
-                        </li>
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                FORUMS
-                            </a>
-                        </li>
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                CAREERS
-                            </a>
-                        </li>
-                        <li class="footer-top__links-item">
-                            <a class="footer-top__links-link" href="#">
-                                COMPANY
-                            </a>
-                        </li>
-                    </ul>
+                <div class="footer-top__links-inner">
+                    <div class="footer-top__links">
+                        <ul class="footer-top__links-list">
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    SERVICES
+                                </a>
+                            </li>
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    STRATEGY
+                                </a>
+                            </li>
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    CAREER
+                                </a>
+                            </li>
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    INVESTOR
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top__links">
+                        <ul class="footer-top__links-list">
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    About
+                                </a>
+                            </li>
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    Our Product
+                                </a>
+                            </li>
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    OUR SERVICE
+                                </a>
+                            </li>
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    CONTACT
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top__links">
+                        <ul class="footer-top__links-list">
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    DEALER LOCATIONS
+                                </a>
+                            </li>
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    NEWS
+                                </a>
+                            </li>
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    FORUMS
+                                </a>
+                            </li>
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    CAREERS
+                                </a>
+                            </li>
+                            <li class="footer-top__links-item">
+                                <a class="footer-top__links-link" href="#">
+                                    COMPANY
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
