@@ -1,0 +1,8 @@
+800 {
+	h1: 30px 40px lh
+	h2: 24px, 34px lh
+	h3: 16px
+	h4: 14px
+	a (white): 14px
+	p: 12px, 30px lh
+}

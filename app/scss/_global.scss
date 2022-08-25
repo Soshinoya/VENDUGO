@@ -19,7 +19,6 @@ body {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    background-color: #363636 !important;
 }
 
 .container {
@@ -34,7 +33,7 @@ body {
     line-height: 44px;
     color: $accent-color;
     margin-bottom: 40px;
-    max-width: 650px;
+    max-width: 630px;
 }
 
 h1 {
@@ -47,12 +46,10 @@ h1 {
 h3 {
     font-size: 18px;
     line-height: 22px;
-    // margin-bottom: 40px;
 }
 
 h4 {
     font-size: 16px;
-    // margin-bottom: 40px;
 }
 
 #cursor,
@@ -115,4 +112,10 @@ h4 {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $accent-color-bg;
+}
+
+@media (max-width: 1900px) {
+    .container {
+        padding: 0 5vw;
+    }
 }
