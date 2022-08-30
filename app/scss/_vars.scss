@@ -51,6 +51,14 @@ $transition: cubic-bezier(0.215, 0.61, 0.355, 1);
     border-radius: 8px;
 }
 
+@media (max-width: 1024px) {
+  %link--white {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
 @media (max-width: 800px) {
   %link--white {
     font-size: 14px;
