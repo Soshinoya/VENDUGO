@@ -95,7 +95,6 @@
 
 .main-slider {
     &__item {
-        padding: 0 0 80px 0;
         min-width: 100%;
         z-index: -1;
         display: none;
@@ -453,6 +452,21 @@
         }
         &__list {
             gap: 70px;
+        }
+    }
+    #cursor,
+    #aura {
+        display: none;
+    }
+    * {
+        cursor: auto;
+    }
+    .main-slider__btn--left,
+    .main-slider__btn--right,
+    .about__dot-slider__btn--left,
+    .about__dot-slider__btn--right {
+        &:hover {
+            border-color: #fff;
         }
     }
 }
@@ -863,6 +877,16 @@
     .footer-bottom {
         &__inner {
             text-align: center;
+        }
+    }
+    .about {
+        &__slider {
+            display: block;
+            margin: 0 auto;
+            transform: translate(0) !important;
+        }
+        &__slider-item + &__slider-item {
+            margin-top: 30px;
         }
     }
 }

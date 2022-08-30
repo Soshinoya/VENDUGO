@@ -64,6 +64,7 @@ $(function () {
 
 function bodyOverFlow(param, elem1, elem2) {
     param ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
-    param ? elem1.style.opacity = '0' : elem1.style.opacity = '1';
-    param ? elem2.style.opacity = '0' : elem2.style.opacity = '1';
+    param ? document.querySelectorAll('section').forEach(section => section.style.display = 'none')
+    : document.querySelectorAll('section').forEach(section => section.style.display = 'block');
+    param ? document.querySelector('footer').style.display = 'none' : document.querySelector('footer').style.display = 'block';
 };
