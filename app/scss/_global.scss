@@ -91,17 +91,18 @@ h4 {
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    // width: 20px;
+    display: none;
 }
-::-webkit-scrollbar-track {
-    background: $black-color;
-}
-::-webkit-scrollbar-thumb {
-    background: $accent-color;
-    border-radius: 10px;
-    border: 5px solid $black-color;
-    transition: all 0.5s $transition;
-}
+// ::-webkit-scrollbar-track {
+//     background: $black-color;
+// }
+// ::-webkit-scrollbar-thumb {
+//     background: $accent-color;
+//     border-radius: 10px;
+//     border: 5px solid $black-color;
+//     transition: all 0.5s $transition;
+// }
 
 .background__text {
     position: absolute;
