@@ -53,18 +53,7 @@ $(function () {
     $('.header-menu__btn').on('click', function () {
         $('.menu').toggleClass('menu--active');
         $(this).toggleClass('header-menu__btn-resolve');
-        if ($('.menu').hasClass('menu--active')) {
-            bodyOverFlow(true, document.querySelector(`.${mainSlider.btnClass}--left`), document.querySelector(`.${mainSlider.btnClass}--right`));
-        } else {
-            bodyOverFlow(false, document.querySelector(`.${mainSlider.btnClass}--left`), document.querySelector(`.${mainSlider.btnClass}--right`));
-        }
+        $('body').toggleClass('noscroll');
     });
 
 });
-
-function bodyOverFlow(param, elem1, elem2) {
-    param ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
-    param ? document.querySelectorAll('section').forEach(section => section.style.display = 'none')
-    : document.querySelectorAll('section').forEach(section => section.style.display = 'block');
-    param ? document.querySelector('footer').style.display = 'none' : document.querySelector('footer').style.display = 'block';
-};
